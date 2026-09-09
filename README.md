@@ -14,18 +14,21 @@ Everything runs in `europe-west1` with the model served from the `eu` multi-regi
 **Nova Market** is a fictional online electronics marketplace selling laptops, phones,
 audio, TVs and home appliances across Central Europe. We build the **Nova Assistant**:
 
-| Lab | What Nova Assistant learns | GEAP capability |
-| --- | --- | --- |
-| [Lab00](labs/lab00_setup.ipynb) | – (get a clean project ready) | Project, APIs, Agents CLI, model access on the `eu` endpoint |
-| [Lab01](labs/lab01_local_agent.ipynb) | Answer product questions, look up orders, explain the return policy | ADK agent, tools, `agents-cli run`, `adk run`, web playground |
-| [Lab02](labs/lab02_deploy_and_register.ipynb) | Serve real users from the cloud | Agent Runtime, Agent Identity, Agent Registry |
-| [Lab03](labs/lab03_mcp_and_skills.ipynb) | Answer "how are sales doing?" from real data, check live warehouse stock, and let an analyst sub-agent use domain skills | BigQuery remote MCP server (EU dataset), a custom MCP server on Cloud Run, **Agent Registry** (MCP servers, public and private **Skills**) |
-| [Lab04](labs/lab04_agent_runtime.ipynb) | Remember shoppers across conversations, do the maths in a sandbox, collect feedback, be debuggable | **Agent Runtime** end to end: Sessions, Memory Bank, Code Execution, Feedback service (Preview), metrics, logs, traces |
-| [Lab05](labs/lab05_model_armor.ipynb) | Resist prompt injection and never leak personal data | Model Armor (two regional templates, ADK's built-in plugin, floor settings), log-based alerts |
-| [Lab06](labs/lab06_agent_gateway_identity.ipynb) | Talk to the returns desk (A2A agent) and the warehouse – but only what policy allows, with Model Armor on the network path | Agent Identity, Agent Gateway, IAM access policies, Model Armor at the gateway |
-| [Lab07](labs/lab07_evaluation.ipynb) | Prove it is good before every release, and keep watching after it | Agent evaluation (LLM-as-judge, tool trajectory, user simulation), online monitors |
-| [Lab08](labs/lab08_gemini_enterprise.ipynb) *(optional)* | Be found by employees in the Gemini Enterprise app | Gemini Enterprise app in the `eu` multi-region (ADK + A2A registration) |
-| [Lab09](labs/lab09_cleanup.ipynb) | – (leave nothing running) | Project shutdown, or removing the running pieces |
+| Lab | What Nova Assistant learns | GEAP capability | Run time* |
+| --- | --- | --- | --- |
+| [Lab00](labs/lab00_setup.ipynb) | – (get a clean project ready) | Project, APIs, Agents CLI, model access on the `eu` endpoint | 2 min |
+| [Lab01](labs/lab01_local_agent.ipynb) | Answer product questions, look up orders, explain the return policy | ADK agent, tools, `agents-cli run`, `adk run`, web playground | 1 min |
+| [Lab02](labs/lab02_deploy_and_register.ipynb) | Serve real users from the cloud | Agent Runtime, Agent Identity, Agent Registry | 7 min |
+| [Lab03](labs/lab03_mcp_and_skills.ipynb) | Answer "how are sales doing?" from real data, check live warehouse stock, and let an analyst sub-agent use domain skills | BigQuery remote MCP server (EU dataset), a custom MCP server on Cloud Run, **Agent Registry** (MCP servers, public and private **Skills**) | 11 min |
+| [Lab04](labs/lab04_agent_runtime.ipynb) | Remember shoppers across conversations, do the maths in a sandbox, collect feedback, be debuggable | **Agent Runtime** end to end: Sessions, Memory Bank, Code Execution, Feedback service (Preview), metrics, logs, traces | 11 min |
+| [Lab05](labs/lab05_model_armor.ipynb) | Resist prompt injection and never leak personal data | Model Armor (two regional templates, ADK's built-in plugin, floor settings), log-based alerts | 4 min |
+| [Lab06](labs/lab06_agent_gateway_identity.ipynb) | Talk to the returns desk (A2A agent) and the warehouse – but only what policy allows, with Model Armor on the network path | Agent Identity, Agent Gateway, IAM access policies, Model Armor at the gateway | 31 min |
+| [Lab07](labs/lab07_evaluation.ipynb) | Prove it is good before every release, and keep watching after it | Agent evaluation (LLM-as-judge, tool trajectory, user simulation), online monitors | 15 min |
+| [Lab08](labs/lab08_gemini_enterprise.ipynb) *(optional, work in progress)* | Be found by employees in the Gemini Enterprise app | Gemini Enterprise app in the `eu` multi-region (ADK + A2A registration; registration needs a licence) | 1 min |
+| [Lab09](labs/lab09_cleanup.ipynb) | – (leave nothing running) | Project shutdown, or removing the running pieces | 1 min |
+
+\* Wall-clock time of a full headless run of all cells in a fresh project (September 2026). Deployments and propagation waits dominate;
+reading, exploring the console and discussion come on top. Lab06 includes gateway creation, two deployments and several propagation waits.
 
 The agent code evolves in place in the `nova-assistant/` project that **Lab01 scaffolds
 with the Agents CLI**. Each later lab writes the new version of `app/agent.py` from the
@@ -52,11 +55,11 @@ on the deployed agent's own Agent Runtime instance.
 | Skills | `eu` jurisdiction of Agent Registry | private skills registered with `--location=eu` (Lab03) |
 | Model Armor templates and screening | `europe-west1` | regional templates, regional endpoint `modelarmor.europe-west1.rep.googleapis.com` for the plugin and the gateway (Lab05, Lab06) |
 | Prompt/response logs, traces, metrics | Cloud Logging and Cloud Trace of your project | stored in the project's log and trace buckets; the labs opt in to prompt/response capture explicitly (Lab04 §4.6) so you decide what is recorded |
-| Evaluation judges (managed metrics, online monitors) | `global` endpoint | the managed evaluation service is not regionalised yet; Lab07 says so and shows the `--region` switch for EU-supported evaluation regions |
+| Evaluation | managed runs against the deployed agent and online monitors: `europe-west1`; local `agents-cli eval run` grading: `global` by default | Lab07 §7.5 creates the managed run in the agent's region (results in a `europe-west1` bucket) and §7.8 the monitors there; for the local loop pass `--region` to grade in an EU-supported evaluation region |
 | Gemini Enterprise app (optional) | `eu` multi-region | created with the `eu` endpoint location (Lab08) |
 
-The one step that leaves the EU today is evaluation with the managed judges. The labs state it plainly so you can decide
-whether to run those steps on synthetic data only.
+The one step that uses a global endpoint by default is the grading of the local development loop (`agents-cli eval run`); the lab says
+so and shows the switch. The data in that loop is the synthetic Nova Market dataset.
 
 ## Prerequisites
 
@@ -136,7 +139,7 @@ workshop.env     written by Lab00 (git-ignored)
 | Agent Runtime, Sessions, Memory Bank, Code Execution | `europe-west1` | regional services, all available in Belgium |
 | Agent Registry, Agent Gateway, IAM access policies | `europe-west1` (registry/gateway), `global` (policies); skills in `eu` | gateway and registry must share the runtime region; Google-managed MCP servers and public skills are listed under `global` (skills also `us`/`eu`) |
 | Model Armor | `europe-west1` | full feature support in the EU |
-| Evaluation service | `global` | the managed eval metrics are not regionalised yet |
+| Evaluation service | `europe-west1` for managed runs and online monitors; `global` default for local `eval run` grading | runs must be created in the agent's region; pass `--region` to the local loop for EU grading |
 | Gemini Enterprise app (optional) | `eu` multi-region | EU data residency for the end-user app |
 
 Verified in September 2026 with Agents CLI 1.5, ADK 2.8, `google-cloud-aiplatform` 1.165.
