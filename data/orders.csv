@@ -1,0 +1,241 @@
+order_id,customer_id,customer_email,country,order_date,sku,product_name,category,quantity,unit_price_eur,total_eur,status,carrier,tracking_number
+NV-10001,C1038,martin.marek38@example.com,CZ,2026-05-20,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,shipped,PPL,TRK490423179
+NV-10002,C1039,nina.novak39@example.com,SK,2026-07-18,NV-LAP-001,Aurora 14 Ultrabook,laptops,2,1199.0,2398.0,delivered,DHL,TRK781192097
+NV-10003,C1016,petra.marek16@example.com,CZ,2026-06-30,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,PPL,TRK624059081
+NV-10004,C1029,marek.kucera29@example.com,HU,2026-05-19,NV-HOM-002,AirPure 400,home,1,199.0,199.0,delivered,GLS,TRK894946073
+NV-10005,C1016,petra.marek16@example.com,CZ,2026-07-06,NV-HOM-002,AirPure 400,home,1,199.0,199.0,delivered,DHL,TRK667212062
+NV-10006,C1023,marek.pospisil23@example.com,AT,2026-05-04,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,cancelled,,
+NV-10007,C1033,petra.novak33@example.com,HU,2026-05-12,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,returned,,
+NV-10008,C1054,jan.horak54@example.com,HU,2026-05-22,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,DHL,TRK671866729
+NV-10009,C1034,jakub.pokorny34@example.com,PL,2026-05-29,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,processing,,
+NV-10010,C1051,anna.dvorak51@example.com,AT,2026-05-25,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,Zasilkovna,TRK894432601
+NV-10011,C1051,anna.dvorak51@example.com,AT,2026-06-15,NV-AUD-001,Halo ANC Headphones,audio,1,279.0,279.0,cancelled,,
+NV-10012,C1001,jan.svoboda1@example.com,PL,2026-06-30,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK843589769
+NV-10013,C1038,martin.marek38@example.com,CZ,2026-08-28,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,cancelled,,
+NV-10014,C1022,jakub.nemec22@example.com,AT,2026-05-29,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK604744541
+NV-10015,C1012,jakub.vesely12@example.com,SK,2026-08-24,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,processing,,
+NV-10016,C1053,marek.dvorak53@example.com,HU,2026-06-14,NV-LAP-001,Aurora 14 Ultrabook,laptops,2,1199.0,2398.0,returned,,
+NV-10017,C1005,lena.svoboda5@example.com,SK,2026-06-19,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,returned,,
+NV-10018,C1048,martin.dvorak48@example.com,SK,2026-06-25,NV-PHN-003,Orbit Fold 2,phones,2,1699.0,3398.0,returned,,
+NV-10019,C1021,david.svoboda21@example.com,PL,2026-08-01,NV-PHN-001,Pulse X Pro 5G,phones,2,949.0,1898.0,delivered,Zasilkovna,TRK530985811
+NV-10020,C1047,david.dvorak47@example.com,CZ,2026-05-22,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,PPL,TRK262296831
+NV-10021,C1037,anna.horak37@example.com,DE,2026-05-19,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,processing,,
+NV-10022,C1052,zuzana.marek52@example.com,PL,2026-08-28,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,delivered,DHL,TRK689119239
+NV-10023,C1035,filip.prochazka35@example.com,HU,2026-08-01,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,returned,,
+NV-10024,C1006,petra.nemec6@example.com,AT,2026-06-25,NV-GAM-001,NovaPad Pro Controller,gaming,2,79.0,158.0,delivered,DHL,TRK130058036
+NV-10025,C1016,petra.marek16@example.com,CZ,2026-08-06,NV-AUD-001,Halo ANC Headphones,audio,1,279.0,279.0,processing,,
+NV-10026,C1020,david.dvorak20@example.com,HU,2026-05-17,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,GLS,TRK591946611
+NV-10027,C1042,nina.svoboda42@example.com,SK,2026-06-23,NV-GAM-001,NovaPad Pro Controller,gaming,2,79.0,158.0,shipped,DHL,TRK671042709
+NV-10028,C1009,jan.marek9@example.com,PL,2026-06-26,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,cancelled,,
+NV-10029,C1011,jan.nemec11@example.com,SK,2026-05-20,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,DHL,TRK608409165
+NV-10030,C1039,nina.novak39@example.com,SK,2026-06-11,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,returned,,
+NV-10031,C1033,petra.novak33@example.com,HU,2026-08-08,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,delivered,PPL,TRK366818750
+NV-10032,C1012,jakub.vesely12@example.com,SK,2026-07-04,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,shipped,PPL,TRK916036417
+NV-10033,C1057,karel.novak57@example.com,SK,2026-07-18,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,shipped,DHL,TRK843814251
+NV-10034,C1017,eva.horak17@example.com,HU,2026-07-01,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,shipped,DHL,TRK850779486
+NV-10035,C1033,petra.novak33@example.com,HU,2026-06-03,NV-ACC-001,Nova 65W GaN Charger,accessories,2,39.0,78.0,processing,,
+NV-10036,C1057,karel.novak57@example.com,SK,2026-05-18,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,PPL,TRK521298041
+NV-10037,C1028,petra.nemec28@example.com,PL,2026-06-24,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,DHL,TRK818840243
+NV-10038,C1019,filip.kucera19@example.com,DE,2026-05-20,NV-WEA-002,TrailBand Fitness Tracker,wearables,2,59.0,118.0,returned,,
+NV-10039,C1041,david.vesely41@example.com,AT,2026-08-22,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,delivered,Zasilkovna,TRK335780633
+NV-10040,C1047,david.dvorak47@example.com,CZ,2026-07-02,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK273372860
+NV-10041,C1045,hana.pospisil45@example.com,AT,2026-06-13,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,delivered,DHL,TRK482912221
+NV-10042,C1020,david.dvorak20@example.com,HU,2026-06-13,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,processing,,
+NV-10043,C1029,marek.kucera29@example.com,HU,2026-06-12,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,shipped,GLS,TRK650037437
+NV-10044,C1004,jan.svoboda4@example.com,AT,2026-05-30,NV-PHN-001,Pulse X Pro 5G,phones,2,949.0,1898.0,delivered,PPL,TRK385147465
+NV-10045,C1017,eva.horak17@example.com,HU,2026-06-04,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,cancelled,,
+NV-10046,C1008,david.pokorny8@example.com,HU,2026-07-26,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,Zasilkovna,TRK260382615
+NV-10047,C1034,jakub.pokorny34@example.com,PL,2026-07-29,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,PPL,TRK399640865
+NV-10048,C1003,jan.nemec3@example.com,SK,2026-08-23,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,GLS,TRK118072925
+NV-10049,C1040,jakub.dvorak40@example.com,HU,2026-07-17,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,PPL,TRK383952089
+NV-10050,C1055,karel.vesely55@example.com,AT,2026-07-10,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,GLS,TRK767549003
+NV-10051,C1008,david.pokorny8@example.com,HU,2026-08-29,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,delivered,DHL,TRK381207931
+NV-10052,C1003,jan.nemec3@example.com,SK,2026-07-20,NV-PHN-002,Pulse Lite,phones,2,329.0,658.0,delivered,DHL,TRK411343078
+NV-10053,C1028,petra.nemec28@example.com,PL,2026-06-14,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,GLS,TRK139674064
+NV-10054,C1000,marek.dvorak0@example.com,AT,2026-05-25,NV-LAP-001,Aurora 14 Ultrabook,laptops,1,1199.0,1199.0,shipped,Zasilkovna,TRK363796374
+NV-10055,C1059,martin.svoboda59@example.com,DE,2026-07-23,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,shipped,Zasilkovna,TRK686162372
+NV-10056,C1053,marek.dvorak53@example.com,HU,2026-06-09,NV-ACC-001,Nova 65W GaN Charger,accessories,3,39.0,117.0,returned,,
+NV-10057,C1013,tomas.marek13@example.com,DE,2026-08-15,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,returned,,
+NV-10058,C1046,zuzana.pokorny46@example.com,AT,2026-06-14,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,delivered,DHL,TRK115306329
+NV-10059,C1004,jan.svoboda4@example.com,AT,2026-06-25,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,2,379.0,758.0,delivered,PPL,TRK190714937
+NV-10060,C1042,nina.svoboda42@example.com,SK,2026-07-25,NV-WEA-002,TrailBand Fitness Tracker,wearables,2,59.0,118.0,delivered,DHL,TRK843765415
+NV-10061,C1018,lena.kucera18@example.com,AT,2026-06-04,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,shipped,PPL,TRK382655094
+NV-10062,C1023,marek.pospisil23@example.com,AT,2026-07-10,NV-ACC-001,Nova 65W GaN Charger,accessories,3,39.0,117.0,delivered,DHL,TRK136986884
+NV-10063,C1056,karel.svoboda56@example.com,AT,2026-05-01,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,Zasilkovna,TRK190076802
+NV-10064,C1030,zuzana.marek30@example.com,AT,2026-06-01,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,shipped,PPL,TRK197551269
+NV-10065,C1016,petra.marek16@example.com,CZ,2026-07-15,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,Zasilkovna,TRK124152911
+NV-10066,C1019,filip.kucera19@example.com,DE,2026-07-14,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,shipped,DHL,TRK806032141
+NV-10067,C1057,karel.novak57@example.com,SK,2026-06-19,NV-WEA-001,Pulse Watch 3,wearables,2,249.0,498.0,cancelled,,
+NV-10068,C1020,david.dvorak20@example.com,HU,2026-06-06,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,cancelled,,
+NV-10069,C1039,nina.novak39@example.com,SK,2026-08-15,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,returned,,
+NV-10070,C1057,karel.novak57@example.com,SK,2026-07-29,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,shipped,DHL,TRK662380097
+NV-10071,C1048,martin.dvorak48@example.com,SK,2026-08-11,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,DHL,TRK191366527
+NV-10072,C1001,jan.svoboda1@example.com,PL,2026-05-14,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,delivered,Zasilkovna,TRK699714064
+NV-10073,C1003,jan.nemec3@example.com,SK,2026-07-27,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,Zasilkovna,TRK383245470
+NV-10074,C1000,marek.dvorak0@example.com,AT,2026-08-28,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,shipped,PPL,TRK807917432
+NV-10075,C1033,petra.novak33@example.com,HU,2026-06-02,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,delivered,GLS,TRK352099141
+NV-10076,C1046,zuzana.pokorny46@example.com,AT,2026-07-23,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,shipped,Zasilkovna,TRK510771188
+NV-10077,C1004,jan.svoboda4@example.com,AT,2026-08-07,NV-HOM-002,AirPure 400,home,1,199.0,199.0,delivered,DHL,TRK183184731
+NV-10078,C1038,martin.marek38@example.com,CZ,2026-08-04,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,returned,,
+NV-10079,C1019,filip.kucera19@example.com,DE,2026-07-01,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,Zasilkovna,TRK388592556
+NV-10080,C1043,filip.vesely43@example.com,PL,2026-07-02,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,GLS,TRK598927943
+NV-10081,C1029,marek.kucera29@example.com,HU,2026-08-23,NV-HOM-002,AirPure 400,home,1,199.0,199.0,processing,,
+NV-10082,C1012,jakub.vesely12@example.com,SK,2026-06-30,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,GLS,TRK592816174
+NV-10083,C1004,jan.svoboda4@example.com,AT,2026-06-27,NV-WEA-002,TrailBand Fitness Tracker,wearables,2,59.0,118.0,delivered,Zasilkovna,TRK325310994
+NV-10084,C1058,petra.cerny58@example.com,AT,2026-07-14,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK902607174
+NV-10085,C1033,petra.novak33@example.com,HU,2026-07-17,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,returned,,
+NV-10086,C1032,hana.horak32@example.com,HU,2026-06-16,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,Zasilkovna,TRK621989554
+NV-10087,C1025,tomas.nemec25@example.com,AT,2026-07-02,NV-LAP-001,Aurora 14 Ultrabook,laptops,1,1199.0,1199.0,returned,,
+NV-10088,C1028,petra.nemec28@example.com,PL,2026-06-23,NV-TV-002,Vista 65 OLED,tv,1,1499.0,1499.0,delivered,Zasilkovna,TRK439386217
+NV-10089,C1007,jan.marek7@example.com,CZ,2026-08-05,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,Zasilkovna,TRK228893413
+NV-10090,C1059,martin.svoboda59@example.com,DE,2026-08-03,NV-PHN-003,Orbit Fold 2,phones,1,1699.0,1699.0,delivered,GLS,TRK499670335
+NV-10091,C1004,jan.svoboda4@example.com,AT,2026-07-15,NV-TV-001,Vista 55 QLED,tv,3,699.0,2097.0,delivered,GLS,TRK559618139
+NV-10092,C1048,martin.dvorak48@example.com,SK,2026-05-14,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,GLS,TRK781786860
+NV-10093,C1059,martin.svoboda59@example.com,DE,2026-06-25,NV-PHN-002,Pulse Lite,phones,3,329.0,987.0,shipped,GLS,TRK303848860
+NV-10094,C1049,david.novak49@example.com,AT,2026-08-22,NV-TV-001,Vista 55 QLED,tv,2,699.0,1398.0,delivered,Zasilkovna,TRK695017231
+NV-10095,C1035,filip.prochazka35@example.com,HU,2026-08-28,NV-AUD-001,Halo ANC Headphones,audio,1,279.0,279.0,cancelled,,
+NV-10096,C1026,martin.kucera26@example.com,SK,2026-07-22,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,delivered,Zasilkovna,TRK152588544
+NV-10097,C1058,petra.cerny58@example.com,AT,2026-06-30,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,GLS,TRK402522508
+NV-10098,C1019,filip.kucera19@example.com,DE,2026-07-23,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,Zasilkovna,TRK804369623
+NV-10099,C1015,eva.kucera15@example.com,CZ,2026-06-20,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,DHL,TRK790636148
+NV-10100,C1010,karel.novak10@example.com,SK,2026-08-12,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,shipped,DHL,TRK586390095
+NV-10101,C1058,petra.cerny58@example.com,AT,2026-06-24,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,DHL,TRK362084953
+NV-10102,C1005,lena.svoboda5@example.com,SK,2026-06-10,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,delivered,GLS,TRK377409322
+NV-10103,C1051,anna.dvorak51@example.com,AT,2026-08-04,NV-GAM-001,NovaPad Pro Controller,gaming,2,79.0,158.0,delivered,Zasilkovna,TRK544404100
+NV-10104,C1047,david.dvorak47@example.com,CZ,2026-06-13,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,cancelled,,
+NV-10105,C1003,jan.nemec3@example.com,SK,2026-06-16,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,DHL,TRK199426515
+NV-10106,C1017,eva.horak17@example.com,HU,2026-07-22,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,shipped,Zasilkovna,TRK435024640
+NV-10107,C1054,jan.horak54@example.com,HU,2026-05-17,NV-WEA-002,TrailBand Fitness Tracker,wearables,2,59.0,118.0,delivered,Zasilkovna,TRK861832472
+NV-10108,C1048,martin.dvorak48@example.com,SK,2026-07-15,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,shipped,PPL,TRK178531200
+NV-10109,C1025,tomas.nemec25@example.com,AT,2026-07-07,NV-ACC-001,Nova 65W GaN Charger,accessories,2,39.0,78.0,shipped,Zasilkovna,TRK366787564
+NV-10110,C1050,martin.prochazka50@example.com,DE,2026-07-06,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,returned,,
+NV-10111,C1006,petra.nemec6@example.com,AT,2026-07-22,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,cancelled,,
+NV-10112,C1057,karel.novak57@example.com,SK,2026-05-06,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,delivered,DHL,TRK349727470
+NV-10113,C1036,karel.pokorny36@example.com,DE,2026-06-08,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,GLS,TRK667207488
+NV-10114,C1040,jakub.dvorak40@example.com,HU,2026-05-13,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,delivered,GLS,TRK663109592
+NV-10115,C1037,anna.horak37@example.com,DE,2026-08-10,NV-PHN-003,Orbit Fold 2,phones,1,1699.0,1699.0,processing,,
+NV-10116,C1000,marek.dvorak0@example.com,AT,2026-06-28,NV-LAP-001,Aurora 14 Ultrabook,laptops,1,1199.0,1199.0,delivered,GLS,TRK792107818
+NV-10117,C1053,marek.dvorak53@example.com,HU,2026-05-31,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,processing,,
+NV-10118,C1015,eva.kucera15@example.com,CZ,2026-07-23,NV-LAP-002,Aurora 16 Creator,laptops,1,1899.0,1899.0,delivered,PPL,TRK123394024
+NV-10119,C1012,jakub.vesely12@example.com,SK,2026-06-23,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,GLS,TRK344641885
+NV-10120,C1042,nina.svoboda42@example.com,SK,2026-07-03,NV-TV-002,Vista 65 OLED,tv,1,1499.0,1499.0,delivered,GLS,TRK871303373
+NV-10121,C1026,martin.kucera26@example.com,SK,2026-05-01,NV-AUD-003,StageOne Soundbar 5.1,audio,1,449.0,449.0,delivered,PPL,TRK320351782
+NV-10122,C1031,filip.svoboda31@example.com,CZ,2026-08-13,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK599412437
+NV-10123,C1014,martin.svoboda14@example.com,PL,2026-05-14,NV-AUD-002,Halo Buds Mini,audio,2,99.0,198.0,processing,,
+NV-10124,C1031,filip.svoboda31@example.com,CZ,2026-07-02,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,2,379.0,758.0,delivered,PPL,TRK738663965
+NV-10125,C1009,jan.marek9@example.com,PL,2026-05-04,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,processing,,
+NV-10126,C1009,jan.marek9@example.com,PL,2026-05-24,NV-TV-002,Vista 65 OLED,tv,1,1499.0,1499.0,delivered,Zasilkovna,TRK864541482
+NV-10127,C1056,karel.svoboda56@example.com,AT,2026-05-11,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,GLS,TRK304744878
+NV-10128,C1011,jan.nemec11@example.com,SK,2026-06-29,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,delivered,GLS,TRK813426129
+NV-10129,C1046,zuzana.pokorny46@example.com,AT,2026-06-12,NV-TV-001,Vista 55 QLED,tv,1,699.0,699.0,shipped,DHL,TRK216992374
+NV-10130,C1000,marek.dvorak0@example.com,AT,2026-06-23,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,delivered,DHL,TRK508161147
+NV-10131,C1022,jakub.nemec22@example.com,AT,2026-08-11,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,shipped,PPL,TRK152889659
+NV-10132,C1045,hana.pospisil45@example.com,AT,2026-08-26,NV-HOM-002,AirPure 400,home,1,199.0,199.0,shipped,DHL,TRK447150598
+NV-10133,C1023,marek.pospisil23@example.com,AT,2026-07-20,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,delivered,DHL,TRK971689949
+NV-10134,C1040,jakub.dvorak40@example.com,HU,2026-05-05,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,shipped,PPL,TRK962577693
+NV-10135,C1058,petra.cerny58@example.com,AT,2026-05-09,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,processing,,
+NV-10136,C1021,david.svoboda21@example.com,PL,2026-07-18,NV-AUD-003,StageOne Soundbar 5.1,audio,1,449.0,449.0,delivered,GLS,TRK901481577
+NV-10137,C1045,hana.pospisil45@example.com,AT,2026-06-08,NV-GAM-003,Vortex Mechanical Keyboard,gaming,2,129.0,258.0,delivered,PPL,TRK126045435
+NV-10138,C1052,zuzana.marek52@example.com,PL,2026-06-29,NV-AUD-001,Halo ANC Headphones,audio,1,279.0,279.0,cancelled,,
+NV-10139,C1024,jakub.marek24@example.com,CZ,2026-08-13,NV-WEA-002,TrailBand Fitness Tracker,wearables,2,59.0,118.0,shipped,DHL,TRK633156419
+NV-10140,C1011,jan.nemec11@example.com,SK,2026-06-08,NV-LAP-001,Aurora 14 Ultrabook,laptops,2,1199.0,2398.0,returned,,
+NV-10141,C1049,david.novak49@example.com,AT,2026-08-19,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,delivered,Zasilkovna,TRK488542540
+NV-10142,C1050,martin.prochazka50@example.com,DE,2026-05-26,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,DHL,TRK365544423
+NV-10143,C1026,martin.kucera26@example.com,SK,2026-07-10,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,shipped,GLS,TRK272542132
+NV-10144,C1027,nina.vesely27@example.com,CZ,2026-06-03,NV-ACC-001,Nova 65W GaN Charger,accessories,3,39.0,117.0,processing,,
+NV-10145,C1005,lena.svoboda5@example.com,SK,2026-07-30,NV-AUD-001,Halo ANC Headphones,audio,1,279.0,279.0,shipped,DHL,TRK351466367
+NV-10146,C1008,david.pokorny8@example.com,HU,2026-07-26,NV-TV-002,Vista 65 OLED,tv,1,1499.0,1499.0,delivered,PPL,TRK937250820
+NV-10147,C1053,marek.dvorak53@example.com,HU,2026-06-04,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,GLS,TRK892493869
+NV-10148,C1016,petra.marek16@example.com,CZ,2026-06-01,NV-PHN-003,Orbit Fold 2,phones,1,1699.0,1699.0,delivered,DHL,TRK402101659
+NV-10149,C1056,karel.svoboda56@example.com,AT,2026-05-09,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,GLS,TRK364085973
+NV-10150,C1032,hana.horak32@example.com,HU,2026-05-13,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,returned,,
+NV-10151,C1029,marek.kucera29@example.com,HU,2026-06-30,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,Zasilkovna,TRK501446613
+NV-10152,C1002,tomas.kucera2@example.com,PL,2026-05-07,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK180655823
+NV-10153,C1023,marek.pospisil23@example.com,AT,2026-07-17,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,PPL,TRK213580477
+NV-10154,C1040,jakub.dvorak40@example.com,HU,2026-05-28,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,delivered,GLS,TRK465090003
+NV-10155,C1009,jan.marek9@example.com,PL,2026-05-05,NV-LAP-003,Budgetbook 15,laptops,3,549.0,1647.0,processing,,
+NV-10156,C1046,zuzana.pokorny46@example.com,AT,2026-05-02,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,delivered,Zasilkovna,TRK828340273
+NV-10157,C1023,marek.pospisil23@example.com,AT,2026-05-27,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,delivered,Zasilkovna,TRK688458656
+NV-10158,C1030,zuzana.marek30@example.com,AT,2026-06-20,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,returned,,
+NV-10159,C1035,filip.prochazka35@example.com,HU,2026-07-23,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,delivered,Zasilkovna,TRK846686387
+NV-10160,C1017,eva.horak17@example.com,HU,2026-06-09,NV-TV-002,Vista 65 OLED,tv,1,1499.0,1499.0,delivered,PPL,TRK435396017
+NV-10161,C1047,david.dvorak47@example.com,CZ,2026-06-23,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,delivered,GLS,TRK792003208
+NV-10162,C1012,jakub.vesely12@example.com,SK,2026-08-29,NV-TV-001,Vista 55 QLED,tv,1,699.0,699.0,delivered,Zasilkovna,TRK268112397
+NV-10163,C1027,nina.vesely27@example.com,CZ,2026-07-13,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,Zasilkovna,TRK930060939
+NV-10164,C1010,karel.novak10@example.com,SK,2026-05-19,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,returned,,
+NV-10165,C1051,anna.dvorak51@example.com,AT,2026-07-19,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,DHL,TRK256644784
+NV-10166,C1022,jakub.nemec22@example.com,AT,2026-08-27,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,PPL,TRK512032051
+NV-10167,C1031,filip.svoboda31@example.com,CZ,2026-08-12,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,GLS,TRK235989781
+NV-10168,C1053,marek.dvorak53@example.com,HU,2026-07-01,NV-ACC-001,Nova 65W GaN Charger,accessories,3,39.0,117.0,delivered,PPL,TRK752453536
+NV-10169,C1059,martin.svoboda59@example.com,DE,2026-07-31,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,processing,,
+NV-10170,C1044,hana.dvorak44@example.com,AT,2026-08-09,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,Zasilkovna,TRK760060350
+NV-10171,C1054,jan.horak54@example.com,HU,2026-07-12,NV-PHN-003,Orbit Fold 2,phones,1,1699.0,1699.0,delivered,PPL,TRK529223548
+NV-10172,C1033,petra.novak33@example.com,HU,2026-05-20,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,delivered,DHL,TRK144129745
+NV-10173,C1056,karel.svoboda56@example.com,AT,2026-05-05,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,returned,,
+NV-10174,C1053,marek.dvorak53@example.com,HU,2026-06-28,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,processing,,
+NV-10175,C1054,jan.horak54@example.com,HU,2026-06-23,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,DHL,TRK557134672
+NV-10176,C1024,jakub.marek24@example.com,CZ,2026-06-26,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,delivered,PPL,TRK103766788
+NV-10177,C1039,nina.novak39@example.com,SK,2026-06-27,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,cancelled,,
+NV-10178,C1039,nina.novak39@example.com,SK,2026-05-23,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,shipped,Zasilkovna,TRK214972063
+NV-10179,C1004,jan.svoboda4@example.com,AT,2026-05-12,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,shipped,PPL,TRK143649358
+NV-10180,C1040,jakub.dvorak40@example.com,HU,2026-06-10,NV-PHN-002,Pulse Lite,phones,2,329.0,658.0,cancelled,,
+NV-10181,C1046,zuzana.pokorny46@example.com,AT,2026-07-04,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,DHL,TRK127763191
+NV-10182,C1054,jan.horak54@example.com,HU,2026-07-28,NV-LAP-003,Budgetbook 15,laptops,1,549.0,549.0,delivered,DHL,TRK241323188
+NV-10183,C1056,karel.svoboda56@example.com,AT,2026-08-26,NV-HOM-002,AirPure 400,home,2,199.0,398.0,delivered,DHL,TRK170347488
+NV-10184,C1053,marek.dvorak53@example.com,HU,2026-05-21,NV-AUD-003,StageOne Soundbar 5.1,audio,1,449.0,449.0,delivered,GLS,TRK975772452
+NV-10185,C1029,marek.kucera29@example.com,HU,2026-08-26,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,shipped,DHL,TRK735534654
+NV-10186,C1016,petra.marek16@example.com,CZ,2026-06-17,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,DHL,TRK295524508
+NV-10187,C1025,tomas.nemec25@example.com,AT,2026-07-26,NV-PHN-002,Pulse Lite,phones,2,329.0,658.0,delivered,Zasilkovna,TRK281185386
+NV-10188,C1050,martin.prochazka50@example.com,DE,2026-07-07,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,GLS,TRK586446482
+NV-10189,C1035,filip.prochazka35@example.com,HU,2026-08-23,NV-HOM-003,RoboClean S9,home,1,599.0,599.0,delivered,GLS,TRK675204861
+NV-10190,C1040,jakub.dvorak40@example.com,HU,2026-06-17,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,Zasilkovna,TRK496151114
+NV-10191,C1036,karel.pokorny36@example.com,DE,2026-05-11,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,shipped,DHL,TRK289790373
+NV-10192,C1039,nina.novak39@example.com,SK,2026-08-13,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,shipped,GLS,TRK432937745
+NV-10193,C1040,jakub.dvorak40@example.com,HU,2026-08-27,NV-ACC-001,Nova 65W GaN Charger,accessories,2,39.0,78.0,returned,,
+NV-10194,C1057,karel.novak57@example.com,SK,2026-05-05,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,DHL,TRK412428399
+NV-10195,C1039,nina.novak39@example.com,SK,2026-06-16,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,DHL,TRK624409602
+NV-10196,C1014,martin.svoboda14@example.com,PL,2026-05-07,NV-GAM-002,Vortex 27 Gaming Monitor,gaming,1,379.0,379.0,delivered,GLS,TRK426137033
+NV-10197,C1006,petra.nemec6@example.com,AT,2026-06-22,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,processing,,
+NV-10198,C1019,filip.kucera19@example.com,DE,2026-07-19,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,shipped,DHL,TRK244685314
+NV-10199,C1000,marek.dvorak0@example.com,AT,2026-05-20,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,shipped,PPL,TRK168363682
+NV-10200,C1040,jakub.dvorak40@example.com,HU,2026-06-04,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,delivered,GLS,TRK112343783
+NV-10201,C1003,jan.nemec3@example.com,SK,2026-06-14,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,processing,,
+NV-10202,C1041,david.vesely41@example.com,AT,2026-07-06,NV-GAM-001,NovaPad Pro Controller,gaming,1,79.0,79.0,cancelled,,
+NV-10203,C1031,filip.svoboda31@example.com,CZ,2026-05-06,NV-AUD-001,Halo ANC Headphones,audio,2,279.0,558.0,delivered,PPL,TRK535927078
+NV-10204,C1011,jan.nemec11@example.com,SK,2026-08-08,NV-AUD-001,Halo ANC Headphones,audio,1,279.0,279.0,delivered,PPL,TRK757816750
+NV-10205,C1035,filip.prochazka35@example.com,HU,2026-06-22,NV-GAM-003,Vortex Mechanical Keyboard,gaming,1,129.0,129.0,delivered,Zasilkovna,TRK973360984
+NV-10206,C1039,nina.novak39@example.com,SK,2026-06-08,NV-PHN-002,Pulse Lite,phones,1,329.0,329.0,returned,,
+NV-10207,C1003,jan.nemec3@example.com,SK,2026-07-01,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,returned,,
+NV-10208,C1034,jakub.pokorny34@example.com,PL,2026-08-04,NV-LAP-001,Aurora 14 Ultrabook,laptops,1,1199.0,1199.0,shipped,PPL,TRK896453305
+NV-10209,C1041,david.vesely41@example.com,AT,2026-05-14,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,delivered,DHL,TRK791510947
+NV-10210,C1002,tomas.kucera2@example.com,PL,2026-08-27,NV-PHN-001,Pulse X Pro 5G,phones,2,949.0,1898.0,returned,,
+NV-10211,C1054,jan.horak54@example.com,HU,2026-07-21,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,processing,,
+NV-10212,C1043,filip.vesely43@example.com,PL,2026-07-06,NV-HOM-001,BrewMaster Espresso,home,1,389.0,389.0,delivered,GLS,TRK789345666
+NV-10213,C1059,martin.svoboda59@example.com,DE,2026-08-21,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,shipped,PPL,TRK282288703
+NV-10214,C1016,petra.marek16@example.com,CZ,2026-05-26,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,delivered,GLS,TRK306090757
+NV-10215,C1056,karel.svoboda56@example.com,AT,2026-06-18,NV-TV-001,Vista 55 QLED,tv,1,699.0,699.0,returned,,
+NV-10216,C1058,petra.cerny58@example.com,AT,2026-07-08,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,shipped,Zasilkovna,TRK669747044
+NV-10217,C1044,hana.dvorak44@example.com,AT,2026-08-01,NV-LAP-001,Aurora 14 Ultrabook,laptops,1,1199.0,1199.0,delivered,GLS,TRK947399622
+NV-10218,C1013,tomas.marek13@example.com,DE,2026-07-12,NV-TV-001,Vista 55 QLED,tv,1,699.0,699.0,delivered,DHL,TRK135340726
+NV-10219,C1001,jan.svoboda1@example.com,PL,2026-05-21,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,DHL,TRK852413648
+NV-10220,C1001,jan.svoboda1@example.com,PL,2026-07-22,NV-LAP-002,Aurora 16 Creator,laptops,1,1899.0,1899.0,returned,,
+NV-10221,C1002,tomas.kucera2@example.com,PL,2026-05-09,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,processing,,
+NV-10222,C1048,martin.dvorak48@example.com,SK,2026-08-13,NV-AUD-003,StageOne Soundbar 5.1,audio,1,449.0,449.0,shipped,PPL,TRK911504608
+NV-10223,C1058,petra.cerny58@example.com,AT,2026-06-01,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,delivered,DHL,TRK220226578
+NV-10224,C1002,tomas.kucera2@example.com,PL,2026-08-12,NV-LAP-002,Aurora 16 Creator,laptops,1,1899.0,1899.0,cancelled,,
+NV-10225,C1040,jakub.dvorak40@example.com,HU,2026-07-20,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,Zasilkovna,TRK207242210
+NV-10226,C1008,david.pokorny8@example.com,HU,2026-05-27,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,delivered,GLS,TRK461331100
+NV-10227,C1027,nina.vesely27@example.com,CZ,2026-08-28,NV-AUD-002,Halo Buds Mini,audio,1,99.0,99.0,delivered,PPL,TRK868543794
+NV-10228,C1048,martin.dvorak48@example.com,SK,2026-07-17,NV-AUD-003,StageOne Soundbar 5.1,audio,1,449.0,449.0,shipped,Zasilkovna,TRK408860505
+NV-10229,C1039,nina.novak39@example.com,SK,2026-05-04,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,shipped,PPL,TRK472353978
+NV-10230,C1030,zuzana.marek30@example.com,AT,2026-05-28,NV-WEA-001,Pulse Watch 3,wearables,1,249.0,249.0,returned,,
+NV-10231,C1055,karel.vesely55@example.com,AT,2026-06-06,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,delivered,Zasilkovna,TRK101394852
+NV-10232,C1033,petra.novak33@example.com,HU,2026-05-07,NV-PHN-003,Orbit Fold 2,phones,1,1699.0,1699.0,delivered,GLS,TRK627017180
+NV-10233,C1006,petra.nemec6@example.com,AT,2026-05-24,NV-HOM-002,AirPure 400,home,1,199.0,199.0,shipped,GLS,TRK993176931
+NV-10234,C1032,hana.horak32@example.com,HU,2026-06-06,NV-AUD-002,Halo Buds Mini,audio,2,99.0,198.0,delivered,DHL,TRK635062306
+NV-10235,C1010,karel.novak10@example.com,SK,2026-05-11,NV-PHN-001,Pulse X Pro 5G,phones,1,949.0,949.0,shipped,PPL,TRK774237069
+NV-10236,C1020,david.dvorak20@example.com,HU,2026-06-20,NV-AUD-003,StageOne Soundbar 5.1,audio,1,449.0,449.0,cancelled,,
+NV-10237,C1005,lena.svoboda5@example.com,SK,2026-06-17,NV-TV-002,Vista 65 OLED,tv,1,1499.0,1499.0,delivered,GLS,TRK382603930
+NV-10238,C1027,nina.vesely27@example.com,CZ,2026-06-18,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,returned,,
+NV-10239,C1014,martin.svoboda14@example.com,PL,2026-07-16,NV-ACC-001,Nova 65W GaN Charger,accessories,1,39.0,39.0,cancelled,,
+NV-10240,C1044,hana.dvorak44@example.com,AT,2026-06-14,NV-WEA-002,TrailBand Fitness Tracker,wearables,1,59.0,59.0,processing,,
