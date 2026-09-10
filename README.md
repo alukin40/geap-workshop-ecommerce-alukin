@@ -47,7 +47,8 @@ other lab reads, so you never retype project IDs. Some cells intentionally take 
 
 > **Cost note.** Everything is pay-as-you-go and small: a handful of Gemini calls,
 > one Agent Runtime instance (idle time is not billed), two tiny Cloud Run services that scale to zero, a
-> BigQuery dataset of 240 rows. Delete the project at the end (Lab09 unlinks billing and shuts it down).
+> BigQuery dataset of 240 rows. Lab09 cleans up: it shuts a workshop-only project down (billing unlinked first), or removes every
+> workshop resource from a project you keep.
 
 ## The storyline: Nova Market
 
@@ -65,7 +66,7 @@ audio, TVs and home appliances across Central Europe. We build the **Nova Assist
 | [Lab06](labs/lab06_agent_gateway_identity.ipynb) | Talk to the returns desk (A2A agent) and the warehouse – but only what policy allows, with Model Armor on the network path | Agent Identity, Agent Gateway, IAM access policies, Model Armor at the gateway | 31 min |
 | [Lab07](labs/lab07_evaluation.ipynb) | Prove it is good before every release, and keep watching after it | Agent evaluation (LLM-as-judge, tool trajectory, user simulation), online monitors | 15 min |
 | [Lab08](labs/lab08_gemini_enterprise.ipynb) *(optional, work in progress)* | Be found by employees in the Gemini Enterprise app | Gemini Enterprise app in the `eu` multi-region (ADK + A2A registration; registration needs a licence) | 1 min |
-| [Lab09](labs/lab09_cleanup.ipynb) | – (leave nothing running) | Project shutdown, or removing the running pieces | 1 min |
+| [Lab09](labs/lab09_cleanup.ipynb) | – (leave nothing running) | Two paths: shut down a workshop-only project, or remove every workshop resource from a project you keep | 1 min / 14 min |
 
 \* Wall-clock time of a full headless run of all cells in a fresh project (September 2026). Deployments and propagation waits dominate;
 reading, exploring the console and discussion come on top. Lab06 includes gateway creation, two deployments and several propagation waits.
