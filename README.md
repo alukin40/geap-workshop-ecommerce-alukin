@@ -43,6 +43,71 @@ on the deployed agent's own Agent Runtime instance.
 **Preview features** used in the labs are labelled as such in the notebook, with what works today and how the lab uses it
 (skills in Agent Registry, the Feedback service). Expect them to evolve.
 
+## Architecture at the end of the workshop
+
+Two views of the end state (after Lab07, agent version 5). Locations are in brackets.
+
+### Nova Assistant — what is inside the deployment
+
+```mermaid
+flowchart LR
+    root["nova_assistant<br/>root agent"]
+    plugin["Model Armor plugin<br/>prompts in, answers out"]
+    tools["Local tools<br/>products, orders, return policy"]
+    warehouse["Warehouse MCP toolset<br/>check_stock, reserve_stock, whoami"]
+    analyst["nova_analyst sub-agent<br/>BigQuery MCP, skills, run_python"]
+    returns["Returns desk<br/>remote A2A agent"]
+    memory["Memory<br/>preload + write back"]
+
+    plugin --- root
+    root --> tools
+    root --> warehouse
+    root --> analyst
+    root --> returns
+    root --> memory
+```
+
+| Piece | Added in | Talks to |
+| --- | --- | --- |
+| Local tools | Lab01 | nothing outside the container (catalog and orders shipped with the agent) |
+| Warehouse MCP toolset | Lab03 | the warehouse MCP server on Cloud Run, resolved from Agent Registry at start-up |
+| `nova_analyst` sub-agent | Lab03, Lab04 | BigQuery MCP server, skills in Agent Registry, the Code Execution sandbox |
+| Memory | Lab04 | Memory Bank of the instance (read at the start of a turn, written after it) |
+| Model Armor plugin | Lab05 | the regional Model Armor API, templates `nova-guard-input` and `nova-guard-output` |
+| Returns desk | Lab06 | another team's A2A agent on Cloud Run |
+
+### Platform components around it
+
+```mermaid
+flowchart LR
+    clients["Clients<br/>Gemini Enterprise app, SDK, CLI, playground"]
+    runtime["Agent Runtime instance<br/>[europe-west1], own identity"]
+    services["Sessions · Memory Bank<br/>Sandbox · Feedback [europe-west1]"]
+    gateway["Agent Gateway (egress)<br/>IAM access policy + Model Armor"]
+    registry["Agent Registry<br/>MCP servers, agents, endpoints, skills"]
+    model["Gemini 3.8 Flash<br/>[eu multi-region]"]
+    enterprise["Enterprise systems<br/>warehouse MCP, returns desk, BigQuery [EU]"]
+    observe["Logging · Trace · Monitoring<br/>online monitors, evaluation runs"]
+
+    clients --> runtime
+    runtime --> services
+    runtime --> gateway
+    gateway --> model
+    gateway --> enterprise
+    gateway -. "resolves destinations, tool annotations" .-> registry
+    runtime -. "telemetry" .-> observe
+    gateway -. "decisions" .-> observe
+```
+
+| Component | Lab | Role |
+| --- | --- | --- |
+| Agent Runtime, Agent Identity | 02 | hosts the agent as its own identity; Sessions, Memory Bank, sandbox and Feedback are children of the instance (Lab04) |
+| Agent Registry | 02, 03 | catalogue of MCP servers (with tool annotations), agents, endpoints and skills; the gateway and the policy refer to it |
+| Model Armor | 05, 06 | two regional templates, used inside the agent and on the gateway |
+| Agent Gateway, IAM access policies | 06 | one egress path for every outbound call; IAP evaluates the access policy, Model Armor screens MCP and A2A payloads |
+| Evaluation | 07 | local `eval run`, managed runs against the deployed instance, online monitors on live traffic |
+| Gemini Enterprise app (optional) | 08 | employee-facing entry point in the `eu` multi-region |
+
 ## Where your data lives — the EU map of this workshop
 
 | What | Location | How the lab keeps it there |
