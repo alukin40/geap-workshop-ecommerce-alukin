@@ -9,6 +9,46 @@ inside EU boundaries, and every lab says where its data lives and why.
 Everything runs in `europe-west1` with the model served from the `eu` multi-region, using
 **Gemini 3.8 Flash**, the **Agent Development Kit (ADK)** and the **Agents CLI**.
 
+## Prerequisites
+
+* A Google account with permission to create a Google Cloud project and link billing.
+  Sandbox organizations work fine. You will be **Owner** of the new project. Lab06 also needs
+  **Organization Policy Administrator** (or an admin who can run one command for you) when your organisation enforces
+  `iam.managed.disableAccessPolicyBinding`.
+* A machine (laptop, Cloud Workstation, Cloud Shell editor…) with:
+  * Python 3.11+ and [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
+  * [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) (`gcloud`), logged in:
+    `gcloud auth login` **and** `gcloud auth application-default login`
+  * Node.js 18+ (only needed by `agents-cli setup` to install coding-agent skills; optional)
+* Optional but recommended: a coding agent (Antigravity, Gemini CLI, Codex, Cursor…) —
+  the Agents CLI installs skills that teach it the same workflow you follow in these labs.
+
+## Setup (5 minutes)
+
+```bash
+git clone https://github.com/alukin40/geap-workshop-ecommerce-alukin.git && cd geap-workshop-ecommerce-alukin
+
+# Python environment for the notebooks (Jupyter + ADK + GEAP SDKs): creates .venv from uv.lock with every dependency pinned
+uv sync
+uv run python -c "import google.adk, google.cloud.bigquery, db_dtypes, pandas, agentplatform; print('environment ok')"
+uv run python -m ipykernel install --user --name geap-workshop --display-name "Python (geap-workshop)"
+
+# Start JupyterLab and open labs/lab00_setup.ipynb
+uv run jupyter lab
+```
+
+Use that `.venv` as the notebook kernel (JupyterLab: "Python (geap-workshop)"; VS Code: pick `.venv` in the kernel picker). Do not
+create the environment by hand with `pip`: the notebooks rely on the versions in `uv.lock`, and a hand-made environment misses
+indirect requirements such as `db-dtypes` for BigQuery result frames.
+
+Run the labs **in order**. Lab00 writes a `workshop.env` file at the repo root that every
+other lab reads, so you never retype project IDs. Some cells intentionally take a while
+(Agent Runtime deployments run 5–10 minutes).
+
+> **Cost note.** Everything is pay-as-you-go and small: a handful of Gemini calls,
+> one Agent Runtime instance (idle time is not billed), two tiny Cloud Run services that scale to zero, a
+> BigQuery dataset of 240 rows. Delete the project at the end (Lab09 unlinks billing and shuts it down).
+
 ## The storyline: Nova Market
 
 **Nova Market** is a fictional online electronics marketplace selling laptops, phones,
@@ -125,41 +165,6 @@ flowchart LR
 
 The one step that uses a global endpoint by default is the grading of the local development loop (`agents-cli eval run`); the lab says
 so and shows the switch. The data in that loop is the synthetic Nova Market dataset.
-
-## Prerequisites
-
-* A Google account with permission to create a Google Cloud project and link billing.
-  Sandbox organizations work fine. You will be **Owner** of the new project. Lab06 also needs
-  **Organization Policy Administrator** (or an admin who can run one command for you) when your organisation enforces
-  `iam.managed.disableAccessPolicyBinding`.
-* A machine (laptop, Cloud Workstation, Cloud Shell editor…) with:
-  * Python 3.11+ and [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
-  * [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) (`gcloud`), logged in:
-    `gcloud auth login` **and** `gcloud auth application-default login`
-  * Node.js 18+ (only needed by `agents-cli setup` to install coding-agent skills; optional)
-* Optional but recommended: a coding agent (Antigravity, Gemini CLI, Codex, Cursor…) —
-  the Agents CLI installs skills that teach it the same workflow you follow in these labs.
-
-## Setup (5 minutes)
-
-```bash
-git clone https://github.com/alukin40/geap-workshop-ecommerce-alukin.git && cd geap-workshop-ecommerce-alukin
-
-# Python environment for the notebooks (Jupyter + ADK + GEAP SDKs)
-uv sync
-uv run python -m ipykernel install --user --name geap-workshop --display-name "Python (geap-workshop)"
-
-# Start JupyterLab and open labs/lab00_setup.ipynb
-uv run jupyter lab
-```
-
-Run the labs **in order**. Lab00 writes a `workshop.env` file at the repo root that every
-other lab reads, so you never retype project IDs. Some cells intentionally take a while
-(Agent Runtime deployments run 5–10 minutes).
-
-> **Cost note.** Everything is pay-as-you-go and small: a handful of Gemini calls,
-> one Agent Runtime instance (idle time is not billed), two tiny Cloud Run services that scale to zero, a
-> BigQuery dataset of 240 rows. Delete the project at the end (Lab09 unlinks billing and shuts it down).
 
 ## Platform notes (September 2026) — and how the labs stay on the EU path
 
